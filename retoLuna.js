@@ -5,9 +5,9 @@ la luna a partir de la temperatura máxima y mínima de cada día*/
 
 console.log("Función Tradicional")
 
-function promedio(tempInicial,tempFinal)
+function promedio(tempMaxima,tempMinima)
 {
-    let average = (tempInicial+ tempFinal)/2
+    let average = (tempMaxima+ tempMinima)/2
     return average
 }
 
@@ -16,6 +16,6 @@ console.log(promedio(25,18))
 console.log()
 console.log("Función Flecha")
 
-let promedioTemp = (tin,tfi)=>((tin+tfi)/2)
+let promedioTemp = (tMax,tMin)=>((tMax+tMin)/2)
 
 console.log(promedioTemp(35,5))
